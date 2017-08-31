@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="build.js"></script>
+    <script src="skyGradient.js"></script>
+    <script src="aframe-teleport-controls.min.js"></script>
+  </head>
+  <body style="background-color: #000">
+    <a-scene>
+      
+    <!-- scene geometry -->
+    <a-assets>
+       
+        <a-asset-item id="tree2" src="コラダデータ4/model.dae"></a-asset-item>
+    </a-assets>
+
+    <a-entity collada-model="#tree2" position="12.24 0.2 -33.31"></a-entity>
+
+
+    <a-sky src="外観.jpg"></a-sky>
+   
+　　
+    <!-- hand controls -->
+    <a-entity teleport-controls vive-controls="hand: left"></a-entity>
+    <a-entity teleport-controls="type: line" vive-controls="hand: right"></a-entity>
+    </a-entity>
+    
+    </a-scene>
+  </body>
+</html>
